@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -29,23 +29,11 @@
 		4903C1AC2CBA8F5E00B2FD7A /* KareemDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KareemDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXGroup section */
-		4903C1942CBA8F5C00B2FD7A /* KareemDemo */ = {
-			isa = PBXGroup;
-			path = KareemDemo;
-			sourceTree = "<group>";
-		};
-		4903C1A52CBA8F5D00B2FD7A /* KareemDemoTests */ = {
-			isa = PBXGroup;
-			path = KareemDemoTests;
-			sourceTree = "<group>";
-		};
-		4903C1AF2CBA8F5E00B2FD7A /* KareemDemoUITests */ = {
-			isa = PBXGroup;
-			path = KareemDemoUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4903C1942CBA8F5C00B2FD7A /* KareemDemo */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KareemDemo; sourceTree = "<group>"; };
+		4903C1A52CBA8F5D00B2FD7A /* KareemDemoTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KareemDemoTests; sourceTree = "<group>"; };
+		4903C1AF2CBA8F5E00B2FD7A /* KareemDemoUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KareemDemoUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4903C18F2CBA8F5C00B2FD7A /* Frameworks */ = {
@@ -187,6 +175,7 @@
 				};
 			};
 			buildConfigurationList = 4903C18D2CBA8F5C00B2FD7A /* Build configuration list for PBXProject "KareemDemo" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,7 +184,6 @@
 			);
 			mainGroup = 4903C1892CBA8F5C00B2FD7A;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 4903C1932CBA8F5C00B2FD7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
