@@ -1,7 +1,4 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
-name: Swift
+name: Xcode Build
 
 on:
   push:
@@ -11,11 +8,15 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build
-      run: swift build -v
 
+    - name: Install Dependencies (CocoaPods if applicable)
+      run: |
+        pod install
+      # Only add this step if you're using CocoaPods
+
+    - name: Build with Xcode
+      run: xcodebuild -scheme KareemDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' build
