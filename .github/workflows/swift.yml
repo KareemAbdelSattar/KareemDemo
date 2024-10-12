@@ -1,4 +1,4 @@
-name: Swift
+name: Swift Build
 
 on:
   push:
@@ -8,12 +8,15 @@ on:
 
 jobs:
   build:
-  
-  runs-on: macOS-latest
+    runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Force Xcode 15.3
-      run: sudo xcode-select -switch /Applications/Xcode_15.3.app
-    - name: Build App
-      run: xcodebuild -project "KareemDemo.xcodeproj" -scheme "KareemDemo" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+      - uses: actions/checkout@v4
+
+      # Since you're using macos-latest, Xcode 15.3 may not be available. Xcode 15.4 is currently the default
+      - name: Force Xcode 15.3
+        run: sudo xcode-select -switch /Applications/Xcode_15.3.app
+
+      # Build the Xcode project
+      - name: Build App
+        run: xcodebuild -project "KareemDemo.xcodeproj" -scheme "KareemDemo" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
