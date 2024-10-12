@@ -11,13 +11,17 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
 
-    # Step 2: Set Xcode 16 as the default
-    - name: Set Xcode 16 as default
-      run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+      - name: check Xcode version
+        run: /usr/bin/xcodebuild -version
 
-    # Step 4: Build the project using Xcode 16
-    - name: Build with Xcode
-      run: xcodebuild -scheme KareemDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' build
+      - name: checkout repository
+        uses: actions/checkout@v3
+
+      - name: build archive
+        run: |
+          xcodebuild -scheme "I am Groot" \
+          -sdk iphoneos \
+          -configuration Debug \
+          -destination generic/platform=iOS \
+          clean archive     
