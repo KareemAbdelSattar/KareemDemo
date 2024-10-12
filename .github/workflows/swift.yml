@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: swift build -v
+      run: xcodebuild -project 'KareemDemo.xcodeproj' -scheme 'KareemDemo' -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO
