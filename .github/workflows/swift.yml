@@ -11,7 +11,13 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v4
+      # Step 1: Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Build with Xcode
-      run: build
+      - name: Check Xcode version
+        run: xcodebuild -version        
+
+      # Step 4: Build the project using Xcode 16
+      - name: Build with Xcode
+        run: xcodebuild -scheme KareemDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' build

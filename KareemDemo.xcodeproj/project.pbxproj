@@ -29,23 +29,23 @@
 		4903C1AC2CBA8F5E00B2FD7A /* KareemDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KareemDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXGroup section */
 		4903C1942CBA8F5C00B2FD7A /* KareemDemo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
+			isa = PBXGroup;
 			path = KareemDemo;
 			sourceTree = "<group>";
 		};
 		4903C1A52CBA8F5D00B2FD7A /* KareemDemoTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
+			isa = PBXGroup;
 			path = KareemDemoTests;
 			sourceTree = "<group>";
 		};
 		4903C1AF2CBA8F5E00B2FD7A /* KareemDemoUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
+			isa = PBXGroup;
 			path = KareemDemoUITests;
 			sourceTree = "<group>";
 		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* End PBXGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4903C18F2CBA8F5C00B2FD7A /* Frameworks */ = {
