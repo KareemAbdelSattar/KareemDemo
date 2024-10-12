@@ -6,12 +6,11 @@ on:
   pull_request:
     branches: [ "main" ]
 
-jobs:
-  build:
-
-    runs-on: macos-latest
+  runs-on: macOS-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build
-      run: xcodebuild -project 'KareemDemo.xcodeproj' -scheme 'KareemDemo' -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO
+    - uses: actions/checkout@v1
+    - name: Force Xcode 15.3
+      run: sudo xcode-select -switch /Applications/Xcode_15.3.app
+    - name: Build App
+      run: xcodebuild -project "KareemDemo.xcodeproj" -scheme "KareemDemo" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
