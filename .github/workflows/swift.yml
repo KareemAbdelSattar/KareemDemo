@@ -13,10 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Install Dependencies (CocoaPods if applicable)
-      run: |
-        pod install
-      # Only add this step if you're using CocoaPods
-
     - name: Build with Xcode
       run: xcodebuild -scheme KareemDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' build
