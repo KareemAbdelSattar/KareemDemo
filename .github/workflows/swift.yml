@@ -8,10 +8,16 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
-
+    runs-on: macos-12  # Ensure this uses Xcode 16 environment
     steps:
-    - uses: actions/checkout@v4
-
-    - name: Build with Xcode
-      run: build
+      # Step 1: Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # Step 2: Select Xcode 16
+      - name: Set Xcode Version
+        run: sudo xcode-select -s /Applications/Xcode_16.app/Contents/Developer
+        
+      # Step 4: Build the project using Xcode 16
+      - name: Build with Xcode
+        run: xcodebuild -scheme KareemDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' build
