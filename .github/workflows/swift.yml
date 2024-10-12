@@ -11,13 +11,19 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      # Step 1: Checkout the code
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Check Xcode version
-        run: xcodebuild -version        
+    # Step 1: Download Xcode 16
+    - name: Download Xcode 16
+      run: |
+        curl -O https://download.developer.apple.com/Developer_Tools/Xcode_16/Xcode_16.xip
+        xip --expand Xcode_16.xip
 
-      # Step 4: Build the project using Xcode 16
-      - name: Build with Xcode
-        run: xcodebuild -scheme KareemDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' build
+    # Step 2: Set Xcode 16 as the default
+    - name: Set Xcode 16 as default
+      run: sudo xcode-select -s $PWD/Xcode.app/Contents/Developer
+
+    # Step 4: Build the project using Xcode 16
+    - name: Build with Xcode
+      run: xcodebuild -scheme KareemDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' build
