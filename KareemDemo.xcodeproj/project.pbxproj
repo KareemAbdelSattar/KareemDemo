@@ -59,9 +59,9 @@
 		};
 /* End PBXFrameworksBuildPhase section */
 
-/* Begin PBXGroup section */
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		4903C1892CBA8F5C00B2FD7A = {
-			isa = PBXGroup;
+			isa = PBXFileSystemSynchronizedRootGroup;
 			children = (
 				4903C1942CBA8F5C00B2FD7A /* KareemDemo */,
 				4903C1A52CBA8F5D00B2FD7A /* KareemDemoTests */,
@@ -71,7 +71,7 @@
 			sourceTree = "<group>";
 		};
 		4903C1932CBA8F5C00B2FD7A /* Products */ = {
-			isa = PBXGroup;
+			isa = PBXFileSystemSynchronizedRootGroup;
 			children = (
 				4903C1922CBA8F5C00B2FD7A /* KareemDemo.app */,
 				4903C1A22CBA8F5D00B2FD7A /* KareemDemoTests.xctest */,
@@ -80,7 +80,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXNativeTarget section */
 		4903C1912CBA8F5C00B2FD7A /* KareemDemo */ = {
