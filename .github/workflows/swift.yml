@@ -16,4 +16,4 @@ jobs:
 
       # Step 2: Build the Xcode project without archiving
       - name: Build App
-        run: xcodebuild -project "KareemDemo.xcodeproj" -scheme "KareemDemo" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+        run: xcodebuild -project "KareemDemo.xcodeproj" -scheme "KareemDemo" -destination "generic/platform=iOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO
