@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+# fail if any commands fails
+set -e
+# make pipelines' return status equal the last command to exit with a non-zero status, or zero if all commands exit successfully
+set -o pipefail
+# debug log
+set -x
+
+# write your script here
+#!/bin/bash
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+PROJECT_PATH="KareemDemo.xcodeproj"  # Replace with the path to your Xcode project
+SCHEME_NAME="KareemDemo"              # Replace with the name of your scheme
+
+
+# Use xcodebuild to extract the version and build number
+VERSION=$(xcodebuild -showBuildSettings -project "$PROJECT_PATH" -scheme "$SCHEME_NAME" | grep MARKETING_VERSION | awk '{print $3}')
+BUILD_NUMBER=$(xcodebuild -showBuildSettings -project "$PROJECT_PATH" -scheme "$SCHEME_NAME" | grep CURRENT_PROJECT_VERSION | awk '{print $3}')
+
+# If version or build number is not found, print an error and exit
+if [ -z "$VERSION" ]; then
+  echo "Error: Failed to retrieve version number."
+  exit 1
+fi
+
+if [ -z "$BUILD_NUMBER" ]; then
+  echo "Error: Failed to retrieve build number."
+  exit 1
+fi
+
+# Create the tag name
+TAG="v${VERSION}.${BUILD_NUMBER}"
+
+# Check if the tag already exists
+if git rev-parse "$TAG" >/dev/null 2>&1; then
+    echo "Tag $TAG already exists. Skipping tagging."
+else
+    # Create an annotated tag with a message
+    echo "Creating tag: $TAG"
+    git tag -a "$TAG" -m "Tagging build $BUILD_NUMBER with version $VERSION for App Store upload"
+
+    # Push the tag to the remote repository
+    echo "Pushing tag $TAG to remote"
+    git push origin "$TAG"
+
+    echo "Tagging and pushing completed successfully."
+fi
+
+# or run a script from your repository, like:
+# bash ./path/to/script.sh
+# not just bash, e.g.:
+# ruby ./path/to/script.rb

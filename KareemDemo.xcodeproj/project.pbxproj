@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +25,15 @@
 
 /* Begin PBXFileReference section */
 		490B5FB82CBBD87100F93AE3 /* KareemDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KareemDemo.xcodeproj; sourceTree = "<group>"; };
-		490B5FC02CBBDB4700F93AE3 /* KareemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = KareemDemo.app; path = "/Users/kareemabdelsattar/Documents/Demos/KareemDemo/build/Debug-iphoneos/KareemDemo.app"; sourceTree = "<absolute>"; };
-		490B5FC12CBBDB4700F93AE3 /* KareemDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KareemDemoTests.xctest; path = "/Users/kareemabdelsattar/Documents/Demos/KareemDemo/build/Debug-iphoneos/KareemDemo.app/PlugIns/KareemDemoTests.xctest"; sourceTree = "<absolute>"; };
-		490B5FC22CBBDB4700F93AE3 /* KareemDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KareemDemoUITests.xctest; path = "/Users/kareemabdelsattar/Documents/Demos/KareemDemo/build/Debug-iphoneos/KareemDemoUITests-Runner.app/PlugIns/KareemDemoUITests.xctest"; sourceTree = "<absolute>"; };
 		490B5FE82CBBDB4700F93AE3 /* KareemDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KareemDemo.xcodeproj; sourceTree = "<group>"; };
+		496C0F8C2CBBE84500D198E9 /* KareemDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KareemDemoTests.xctest; path = "/Users/kareemabdelsattar/Documents/Demos/KareemDemo/build/Debug-iphoneos/KareemDemo.app/PlugIns/KareemDemoTests.xctest"; sourceTree = "<absolute>"; };
+		496C0F8D2CBBE84500D198E9 /* KareemDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KareemDemoUITests.xctest; path = "/Users/kareemabdelsattar/Documents/Demos/KareemDemo/build/Debug-iphoneos/KareemDemoUITests-Runner.app/PlugIns/KareemDemoUITests.xctest"; sourceTree = "<absolute>"; };
+		496C0FA62CBBE84500D198E9 /* KareemDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KareemDemo.xcodeproj; sourceTree = "<group>"; };
+		496C0FB02CBBE84E00D198E9 /* KareemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KareemDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		490B5FBB2CBBDA7100F93AE3 /* Exceptions for "KareemDemo" folder in "KareemDemo" target */ = {
+		490B5FBB2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				KareemDemo/Assets.xcassets,
@@ -42,14 +43,14 @@
 			);
 			target = 4903C1912CBA8F5C00B2FD7A /* KareemDemo */;
 		};
-		490B5FBC2CBBDA7100F93AE3 /* Exceptions for "KareemDemo" folder in "KareemDemoTests" target */ = {
+		490B5FBC2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				KareemDemoTests/KareemDemoTests.swift,
 			);
 			target = 4903C1A12CBA8F5D00B2FD7A /* KareemDemoTests */;
 		};
-		490B5FBD2CBBDA7100F93AE3 /* Exceptions for "KareemDemo" folder in "KareemDemoUITests" target */ = {
+		490B5FBD2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				KareemDemoUITests/KareemDemoUITests.swift,
@@ -60,15 +61,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4903C1892CBA8F5C00B2FD7A = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				490B5FBB2CBBDA7100F93AE3 /* Exceptions for "KareemDemo" folder in "KareemDemo" target */,
-				490B5FBC2CBBDA7100F93AE3 /* Exceptions for "KareemDemo" folder in "KareemDemoTests" target */,
-				490B5FBD2CBBDA7100F93AE3 /* Exceptions for "KareemDemo" folder in "KareemDemoUITests" target */,
-			);
-			sourceTree = "<group>";
-		};
+		4903C1892CBA8F5C00B2FD7A = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (490B5FBB2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 490B5FBC2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 490B5FBD2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {KareemDemo.app = wrapper.application; }; explicitFolders = (); sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +99,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		496C0FA72CBBE84500D198E9 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,7 +123,7 @@
 			packageProductDependencies = (
 			);
 			productName = KareemDemo;
-			productReference = 490B5FC02CBBDB4700F93AE3 /* KareemDemo.app */;
+			productReference = 496C0FB02CBBE84E00D198E9 /* KareemDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4903C1A12CBA8F5D00B2FD7A /* KareemDemoTests */ = {
@@ -145,7 +143,7 @@
 			packageProductDependencies = (
 			);
 			productName = KareemDemoTests;
-			productReference = 490B5FC12CBBDB4700F93AE3 /* KareemDemoTests.xctest */;
+			productReference = 496C0F8C2CBBE84500D198E9 /* KareemDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4903C1AB2CBA8F5E00B2FD7A /* KareemDemoUITests */ = {
@@ -165,7 +163,7 @@
 			packageProductDependencies = (
 			);
 			productName = KareemDemoUITests;
-			productReference = 490B5FC22CBBDB4700F93AE3 /* KareemDemoUITests.xctest */;
+			productReference = 496C0F8D2CBBE84500D198E9 /* KareemDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -191,6 +189,7 @@
 				};
 			};
 			buildConfigurationList = 4903C18D2CBA8F5C00B2FD7A /* Build configuration list for PBXProject "KareemDemo" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -199,7 +198,6 @@
 			);
 			mainGroup = 4903C1892CBA8F5C00B2FD7A;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 4903C1892CBA8F5C00B2FD7A;
 			projectDirPath = "";
 			projectReferences = (
@@ -210,6 +208,10 @@
 				{
 					ProductGroup = 490B5FE92CBBDB4700F93AE3 /* Products */;
 					ProjectRef = 490B5FE82CBBDB4700F93AE3 /* KareemDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = 496C0FA72CBBE84500D198E9 /* Products */;
+					ProjectRef = 496C0FA62CBBE84500D198E9 /* KareemDemo.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -408,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"KareemDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 5M6B577X35;
 				ENABLE_PREVIEWS = YES;
@@ -438,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"KareemDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 5M6B577X35;
 				ENABLE_PREVIEWS = YES;
