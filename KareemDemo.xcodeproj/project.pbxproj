@@ -24,12 +24,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4903C1922CBA8F5C00B2FD7A /* KareemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KareemDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4903C1A22CBA8F5D00B2FD7A /* KareemDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KareemDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4903C1AC2CBA8F5E00B2FD7A /* KareemDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KareemDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4903C1922CBA8F5C00B2FD7A /* KareemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = KareemDemo.app; path = "/Users/kareemabdelsattar/Documents/Demos/KareemDemo/build/Debug-iphoneos/KareemDemo.app"; sourceTree = "<absolute>"; };
+		4903C1A22CBA8F5D00B2FD7A /* KareemDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KareemDemoTests.xctest; path = "/Users/kareemabdelsattar/Documents/Demos/KareemDemo/build/Debug-iphoneos/KareemDemo.app/PlugIns/KareemDemoTests.xctest"; sourceTree = "<absolute>"; };
+		4903C1AC2CBA8F5E00B2FD7A /* KareemDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KareemDemoUITests.xctest; path = "/Users/kareemabdelsattar/Documents/Demos/KareemDemo/build/Debug-iphoneos/KareemDemoUITests-Runner.app/PlugIns/KareemDemoUITests.xctest"; sourceTree = "<absolute>"; };
+		490B5FB82CBBD87100F93AE3 /* KareemDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KareemDemo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		490B5FBB2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				KareemDemo/Assets.xcassets,
+				KareemDemo/ContentView.swift,
+				KareemDemo/KareemDemoApp.swift,
+				"KareemDemo/Preview Content/Preview Assets.xcassets",
+			);
+			target = 4903C1912CBA8F5C00B2FD7A /* KareemDemo */;
+		};
+		490B5FBC2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				KareemDemoTests/KareemDemoTests.swift,
+			);
+			target = 4903C1A12CBA8F5D00B2FD7A /* KareemDemoTests */;
+		};
+		490B5FBD2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				KareemDemoUITests/KareemDemoUITests.swift,
+				KareemDemoUITests/KareemDemoUITestsLaunchTests.swift,
+			);
+			target = 4903C1AB2CBA8F5E00B2FD7A /* KareemDemoUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		4903C1892CBA8F5C00B2FD7A = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (490B5FBB2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 490B5FBC2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 490B5FBD2CBBDA7100F93AE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); sourceTree = "<group>"; };
 		4903C1942CBA8F5C00B2FD7A /* KareemDemo */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KareemDemo; sourceTree = "<group>"; };
 		4903C1A52CBA8F5D00B2FD7A /* KareemDemoTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KareemDemoTests; sourceTree = "<group>"; };
 		4903C1AF2CBA8F5E00B2FD7A /* KareemDemoUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KareemDemoUITests; sourceTree = "<group>"; };
@@ -59,28 +89,13 @@
 		};
 /* End PBXFrameworksBuildPhase section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		4903C1892CBA8F5C00B2FD7A = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			children = (
-				4903C1942CBA8F5C00B2FD7A /* KareemDemo */,
-				4903C1A52CBA8F5D00B2FD7A /* KareemDemoTests */,
-				4903C1AF2CBA8F5E00B2FD7A /* KareemDemoUITests */,
-				4903C1932CBA8F5C00B2FD7A /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		4903C1932CBA8F5C00B2FD7A /* Products */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			children = (
-				4903C1922CBA8F5C00B2FD7A /* KareemDemo.app */,
-				4903C1A22CBA8F5D00B2FD7A /* KareemDemoTests.xctest */,
-				4903C1AC2CBA8F5E00B2FD7A /* KareemDemoUITests.xctest */,
-			);
+/* Begin PBXGroup section */
+		490B5FB92CBBD87100F93AE3 /* Products */ = {
+			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
 		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		4903C1912CBA8F5C00B2FD7A /* KareemDemo */ = {
@@ -175,7 +190,7 @@
 				};
 			};
 			buildConfigurationList = 4903C18D2CBA8F5C00B2FD7A /* Build configuration list for PBXProject "KareemDemo" */;
-			compatibilityVersion = "Xcode 15.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -184,8 +199,14 @@
 			);
 			mainGroup = 4903C1892CBA8F5C00B2FD7A;
 			minimizedProjectReferenceProxies = 1;
-			productRefGroup = 4903C1932CBA8F5C00B2FD7A /* Products */;
+			productRefGroup = 4903C1892CBA8F5C00B2FD7A;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 490B5FB92CBBD87100F93AE3 /* Products */;
+					ProjectRef = 490B5FB82CBBD87100F93AE3 /* KareemDemo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4903C1912CBA8F5C00B2FD7A /* KareemDemo */,
